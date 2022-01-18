@@ -31,7 +31,7 @@ const uploadCsv = async (req, res) => {
 
   await file.mv(upPath, async function (err) {
     if (err) {
-      throw customErrors.CustomAPIError('something went wrong')
+      return res.status(500).json({ msg: `something went wrong` })
     }
 
     // function for inserting content into db
