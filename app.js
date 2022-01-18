@@ -9,7 +9,7 @@ const app = express()
 
 // packages
 const fileUpload = require('express-fileupload')
-
+const moragn = require('morgan')
 // seccurity packages
 const rateLimiter = require('express-rate-limit')
 const helmet = require('helmet')
@@ -26,6 +26,7 @@ app.use(
     max: 100,
   }),
 )
+app.use(moragn('tiny'))
 app.use(fileUpload())
 app.use(helmet())
 app.use(express.json())
