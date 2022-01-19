@@ -26,8 +26,8 @@ Upload the Csv file:
 [post] /api/csv/uploads
 ```
 
-Body: form-data
-FieldName: csv
+Body: form-data <br/>
+FieldName: csv <br/>
 Required: csv file
 
 Get All Contents:
@@ -42,16 +42,16 @@ Get Single Content:
 ```sh
 [get] /api/csv/{contentId}
 ```
-Required: contentId
+Required: contentId <br/>
 
 Create Content:
 
 ```sh
 [post] /api/csv/
 ```
-Body: raw - json
-Fields: name,rollno,gender,stream,mail,year
-Required: All fields
+Body: raw - json <br/>
+Fields: name,rollno,gender,stream,mail,year<br/>
+Required: All fields<br/>
 Example:
 ```
 {
@@ -69,9 +69,9 @@ Update Content:
 ```sh
 [patch] /api/csv/{id}
 ```
-Body: raw - json
-Fields: name,rollno,gender,stream,mail,year
-Required: Filed you want to update and contentId
+Body: raw - json <br/>
+Fields: name,rollno,gender,stream,mail,year <br/>
+Required: Filed you want to update and contentId <br/>
 Example:
 ```
 {
