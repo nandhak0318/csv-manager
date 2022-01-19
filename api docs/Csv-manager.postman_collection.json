@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "28966843-2bc4-4357-9b63-ea0669ed1cf0",
+		"name": "Csv-manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "uploadCsv",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/csv/uploads",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"csv",
+						"uploads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllContent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/csv",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSingleContent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/csv/61e76f7c6057f254aa959573",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"csv",
+						"61e76f7c6057f254aa959573"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createContent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"akshaya\",\r\n    \"rollno\": \"20bit001\",\r\n    \"gender\": \"feMale\",\r\n    \"stream\" : \"Bsc.IT\",\r\n    \"mail\" : \"abc@aa.com\",\r\n    \"year\" : \"2018-2022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/csv",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateContent",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rollno\": \"20bit003\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/csv/61e76f7c6057f254aa959573",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"csv",
+						"61e76f7c6057f254aa959573"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteContent",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/csv/61e76f7c6057f254aa959573",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"csv",
+						"61e76f7c6057f254aa959573"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "ulr",
+			"value": "http://18.118.103.110:3100/",
+			"type": "string"
+		},
+		{
+			"key": "localurl",
+			"value": "http://localhost:3100",
+			"type": "string"
+		}
+	]
+}

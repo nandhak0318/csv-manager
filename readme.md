@@ -1,0 +1,1 @@
+auth bearer Token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoZWxsbyI6ImhsbG8iLCJpYXQiOjE2NDI1NjIzNTMsImV4cCI6MTY0Njg4MjM1M30.YslLj4VVQRuzsIkWabzfaenJEv41xoNplroZrJtorzU

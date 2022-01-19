@@ -35,8 +35,9 @@ app.use(mongoSanitize())
 
 // routes
 const csvRouter = require('./routes/csvRoutes')
+const auth = require('./middleware/auth')
 
-app.use('/api/csv', csvRouter)
+app.use('/api/csv', auth, csvRouter)
 
 app.get('/', (req, res) => {
   res.send('csv manager')
