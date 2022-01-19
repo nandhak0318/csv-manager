@@ -82,6 +82,6 @@ Example:
 Delete Content:
 
 ```sh
-[get] /api/csv/{contentId}
+[delete] /api/csv/{contentId}
 ```
 Required: contentId
