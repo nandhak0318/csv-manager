@@ -2,7 +2,10 @@
 # Start and stop the server
 ```
 #start
+npm i
 npm run start
+
+now the server start on localhost:3000
 
 #stop
 press ctrl + c on the teriminal
